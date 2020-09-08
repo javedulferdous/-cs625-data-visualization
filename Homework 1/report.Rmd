@@ -10,23 +10,13 @@ knitr::opts_chunk$set(echo = TRUE)
 
 CS 625, Fall 2020
 
-## Setting up your report 
-
-1. Replace my name with your name in the 
-```
-author: "Dr. Michele Weigle"
-```
-line at the top of this file.  You'll do this for every report that you submit.
-
-2. Remove this section "Setting up your report" before submitting your report.
-
 ## Git, GitHub
 
 1. *What is your GitHub username?*
 => javedulferdous
 
 2. *What is the URL of your remote GitHub repo (created through Mr. Kennedy's exercises)?*
-=> https://github.com/cs625-datavis-fall20/hw1-setup-javedulferdous.git
+=> https://github.com/javedulferdous/cs625-data-visualization.git
 ## R
 
 The command below will load the tidyverse package.  If you have installed R, RStudio, and the tidyverse package, it should display a list of loaded packages and their versions.
