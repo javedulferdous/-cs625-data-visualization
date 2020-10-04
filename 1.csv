@@ -1,13 +1,13 @@
 Health District,Week,Value
 Chesapeake,Week 10,0
-Norfolk,Week 10,0
-Virginia Beach,Week 10,0
 Chesapeake,Week 11,0
-Norfolk,Week 11,0
-Virginia Beach,Week 11,0
 Chesapeake,Week 12,0.000184638
-Norfolk,Week 12,0.000514315
-Virginia Beach,Week 12,0.002401469
 Chesapeake,Week 13,0.003508124
+Norfolk,Week 10,0
+Norfolk,Week 11,0
+Norfolk,Week 12,0.000514315
 Norfolk,Week 13,0.002571576
+Virginia Beach,Week 10,0
+Virginia Beach,Week 11,0
+Virginia Beach,Week 12,0.002401469
 Virginia Beach,Week 13,0.006780619
