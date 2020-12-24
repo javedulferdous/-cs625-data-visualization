@@ -17,6 +17,7 @@ CS 625, Fall 2020
 
 2. *What is the URL of your remote GitHub repo (created through Mr. Kennedy's exercises)?*
 => https://github.com/javedulferdous/cs625-data-visualization.git
+
 ## R
 
 The command below will load the tidyverse package.  If you have installed R, RStudio, and the tidyverse package, it should display a list of loaded packages and their versions.
@@ -27,14 +28,13 @@ library(tidyverse)
 ## R Markdown 
 
 1. *Create an ordered bulleted list with at least 3 items*
-=> 1. Item 1
+=> 
+   1. Item 1
    2. Item 2
    3. Item 3
-    + Item 3a
-    + Item 3b
 
 2. *Write a paragraph that demonstrates the use of italics, bold, bold italics, and code.*
-=> This is a demonstration of *italics*, **bold**, ***bold italic*** , ```Code ```
+=> This is a demonstration of *italics*, **bold**, **_bold italic_** , ```console.log("Hello") ```
 
 3. *Create an example of a fenced code block.*
 
@@ -45,11 +45,6 @@ function hello() {
 ```
 
 4. *Create a level 4 heading*
-# Header 1
-
-## Header 2
-
-### Header 3
 
 #### Header 4
 
@@ -62,6 +57,7 @@ function hello() {
 
 2. *How many rows are in mpg? How many columns?*
 => row 234, column 11
+
 3. *What does the drv variable describe? Read the help for ?mpg to find out.*
 
 4. *Make a scatterplot of hwy vs cyl.*
@@ -84,23 +80,18 @@ my_varıable
 
 ```r
 library(tidyverse)
-
 ggplot(data = mpg) + 
   geom_point(mapping = aes(x = displ, y = hwy))
-
 fliter(mpg, cyl = 8)
 filter(diamond, carat > 3)
 ```
 => 
 ```r
 library(tidyverse)
-
 ggplot(data = mpg) +
   geom_point(mapping = aes(x = displ, y = hwy))
 filter(mpg, cyl == 8)
-
 filter(diamonds, carat > 3)
-
 ```
 
 3. *Press Alt + Shift + K. What happens? How can you get to the same place using the menus?*
@@ -111,7 +102,9 @@ filter(diamonds, carat > 3)
 *Insert your the image of your final bar chart here*
 
 1. *What conclusions can you draw from the chart?*
+=> ![Sales in the South](report_files/figure-gfm/Sales-in-the-South.png)
 
+The image of the final bar chart depict some potential prospects in the Southern part of the word. For example, Southern Asia is highly potential for furniture in 2015 whereas in 2012 it was a completely different scenario. As for the Southern part of Africa, it was never a good time for sale any year from 2012-2015. Southern US has almost second-worst progress after Southern Africa.
 
 ## Observable and Vega-Lite
 
@@ -168,4 +161,10 @@ filter(diamonds, carat > 3)
 ## References
 
 *Insert the list of sites you used as references as an unordered list with named links here.  This is required.*
+
 1. [R for Data Science](https://r4ds.had.co.nz/)
+<<<<<<< HEAD
+2. [Lesson 6. Add Images to an R Markdown Report](https://www.earthdatascience.org/courses/earth-analytics/document-your-science/add-images-to-rmarkdown-report/)
+=======
+2. [Lesson 6. Add Images to an R Markdown Report](https://www.earthdatascience.org/courses/earth-analytics/document-your-science/add-images-to-rmarkdown-report/)
+>>>>>>> 21f02bffb087db825442d0c30684849b942ea6a6

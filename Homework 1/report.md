@@ -1,78 +1,80 @@
 Homework 1
 ================
-Dr. Michele Weigle
+Md Javedul Ferdous
 
 CS 625, Fall 2020
 
-## Setting up your report
-
-1.  Replace my name with your name in the
-
-<!-- end list -->
-
-    author: "Dr. Michele Weigle"
-
-line at the top of this file. You’ll do this for every report that you
-submit.
-
-2.  Remove this section “Setting up your report” before submitting your
-    report.
-
 ## Git, GitHub
 
-1.  *What is your GitHub username?*
+1.  *What is your GitHub username?* =\> javedulferdous
 
 2.  *What is the URL of your remote GitHub repo (created through
-    Mr. Kennedy’s exercises)?*
+    Mr. Kennedy’s exercises)?* =\>
+    <https://github.com/javedulferdous/cs625-data-visualization.git>
 
 ## R
 
 The command below will load the tidyverse package. If you have installed
 R, RStudio, and the tidyverse package, it should display a list of
-loaded packages and their
-    versions.
+loaded packages and their versions.
 
 ``` r
 library(tidyverse)
 ```
 
-    ## ── Attaching packages ──────────────────────────────────────────── tidyverse 1.2.1 ──
+    ## -- Attaching packages ---------------------------------------------- tidyverse 1.3.0 --
 
-    ## ✔ ggplot2 3.2.0     ✔ purrr   0.3.2
-    ## ✔ tibble  2.1.3     ✔ dplyr   0.8.3
-    ## ✔ tidyr   0.8.3     ✔ stringr 1.4.0
-    ## ✔ readr   1.3.1     ✔ forcats 0.4.0
+    ## v ggplot2 3.3.2     v purrr   0.3.4
+    ## v tibble  3.0.3     v dplyr   1.0.2
+    ## v tidyr   1.1.2     v stringr 1.4.0
+    ## v readr   1.3.1     v forcats 0.5.0
 
-    ## ── Conflicts ─────────────────────────────────────────────── tidyverse_conflicts() ──
-    ## ✖ dplyr::filter() masks stats::filter()
-    ## ✖ dplyr::lag()    masks stats::lag()
+    ## -- Conflicts ------------------------------------------------- tidyverse_conflicts() --
+    ## x dplyr::filter() masks stats::filter()
+    ## x dplyr::lag()    masks stats::lag()
 
 ## R Markdown
 
-1.  *Create an ordered bulleted list with at least 3 items*
+1.  *Create an ordered bulleted list with at least 3 items* =\>
+    
+    1.  Item 1
+    2.  Item 2
+    3.  Item 3
 
 2.  *Write a paragraph that demonstrates the use of italics, bold, bold
-    italics, and code.*
+    italics, and code.* =\> This is a demonstration of *italics*,
+    **bold**, ***bold italic*** , `console.log("Hello")`
 
 3.  *Create an example of a fenced code block.*
 
+<!-- end list -->
+
+    function hello() {
+      console.log("Hello World!");
+    }
+
 4.  *Create a level 4 heading*
+
+#### Header 4
 
 ## R
 
 #### Data Visualization Exercises
 
-1.  *Run ggplot(data = mpg). What do you see?*
+1.  *Run ggplot(data = mpg). What do you see?* =\> It creates an empty
+    plot
 
-2.  *How many rows are in mpg? How many columns?*
+2.  *How many rows are in mpg? How many columns?* =\> row 234, column 11
 
 3.  *What does the drv variable describe? Read the help for ?mpg to find
     out.*
 
-4.  *Make a scatterplot of hwy vs cyl.*
+4.  *Make a scatterplot of hwy vs cyl.* ![hwy vs
+    cyl](report_files/figure-gfm/Rplot.png)
 
 5.  *What happens if you make a scatterplot of class vs drv? Why is the
-    plot not useful?*
+    plot not useful?* ![class vs
+    drv](report_files/figure-gfm/Rplot01.png)
 
 #### Workflow: basics Exercises
 
@@ -85,28 +87,47 @@ my_variable <- 10
 my_varıable
 ```
 
+\=\> There is ‘1’ instead of having i in my\_variable.
+
 2.  *Tweak each of the following R commands so that they run correctly:*
 
 <!-- end list -->
 
 ``` r
 library(tidyverse)
-
 ggplot(data = mpg) + 
   geom_point(mapping = aes(x = displ, y = hwy))
-
 fliter(mpg, cyl = 8)
 filter(diamond, carat > 3)
 ```
 
+\=\>
+
+``` r
+library(tidyverse)
+ggplot(data = mpg) +
+  geom_point(mapping = aes(x = displ, y = hwy))
+filter(mpg, cyl == 8)
+filter(diamonds, carat > 3)
+```
+
 3.  *Press Alt + Shift + K. What happens? How can you get to the same
-    place using the menus?*
+    place using the menus?* =\> The keyboard shortcuts help display
+    appears.
 
 ## Tableau
 
 *Insert your the image of your final bar chart here*
 
-1.  *What conclusions can you draw from the chart?*
+1.  *What conclusions can you draw from the chart?* =\> ![Sales in the
+    South](report_files/figure-gfm/Sales-in-the-South.png)
+
+The image of the final bar chart depict some potential prospects in the
+Southern part of the word. For example, Southern Asia is highly
+potential for furniture in 2015 whereas in 2012 it was a completely
+different scenario. As for the Southern part of Africa, it was never a
+good time for sale any year from 2012-2015. Southern US has almost
+second-worst progress after Southern Africa.
 
 ## Observable and Vega-Lite
 
@@ -115,39 +136,64 @@ filter(diamond, carat > 3)
 1.  *In the “New York City weather forecast” section, try replacing
     `Forecast: detailedForecast` with `Forecast: shortForecast`. Then
     press the blue play button or use Shift-Return to run your change.
-    What happens?*
+    What happens?* =\> Forcast description became more shorter. ususally
+    it was like two words to describe each day weather condition.
 
 2.  *Under the scatterplot of temperature vs. name, try replacing
     `markCircle()` with `markSquare()`. Then press the blue play button
     or use Shift-Return to run your change. What happens? How about
-    `markPoint()`?*
+    `markPoint()`?* =\> The marks on the graph take a square shape when
+    we replace markCircle() with markSquare(). Using markPoint() the all
+    square point became small ring circle.
 
 3.  *Under “Pick a location, see the weather forecast”, pick a location
-    on the map. Where was the point you picked near?*
+    on the map. Where was the point you picked near?* =\> Pick Location
+    : Longitude: -77.11 Latitude: 37.41. Picked a point near Norfolk,
+    VA.
 
 4.  *The last visualization on this page is a “fancy” weather chart
     embedded from another notebook. Click on the 3 dots next to that
     chart and choose ‘Download PNG’. Insert the PNG into your report.*
+    ![Weather Chart](report_files/figure-gfm/a-taste-of-observable.png)
 
 ### Charting with Vega-Lite
 
-1.  *Pass an option of { size: 200 } to markCircle().*
+1.  *Pass an option of { size: 200 } to markCircle().* =\> The size of
+    the *circle* marks have increased to 200 unit.
+    ![](report_files/figure-gfm/vega-lite.png)
 
-2.  *Try markSquare instead of markCircle.*
+2.  *Try markSquare instead of markCircle.* =\> The shaped of marks
+    changed from *circular* to *square*.
+    ![](report_files/figure-gfm/markSquare.png)
 
-3.  *Try markPoint({ shape: ‘diamond’ }).*
+3.  *Try markPoint({ shape: ‘diamond’ }).* =\> The size of the marks is
+    back to default and shape in changed to diamond.
+    ![](report_files/figure-gfm/diamond.png)
 
-4.  *Change Horsepower to Acceleration*
+4.  *Change Horsepower to Acceleration* =\> The *x-axis label* is
+    changed from *Horsepower* to *Acceleration*
+    ![](report_files/figure-gfm/Acceleration.png)
 
-5.  *Swap what fields are displayed on the x- and y-axis*
+5.  *Swap what fields are displayed on the x- and y-axis* =\>Now
+    *x-axis* became *Miles\_per\_Gallon* and *y-axi*s became
+    *Acceleration* ![](report_files/figure-gfm/swap.png)
 
-6.  *Change Name to Origin.*
+6.  *Change Name to Origin.* =\> Changed name to origin but no changes
+    is be seen ![](report_files/figure-gfm/origin.png)
 
-7.  *Remove the vl.y().fieldN(“Origin”) line.*
+7.  *Remove the vl.y().fieldN(“Origin”) line.* =\> Only one field of
+    total records is seen in the chart. No country record is available
+    in this chart. ![](report_files/figure-gfm/remove_y.png)
 
-8.  *Replace count() with average(“Miles\_per\_Gallon”).*
+8.  *Replace count() with average(“Miles\_per\_Gallon”).* =\>The average
+    is shown in place of the count of records.
+    ![](report_files/figure-gfm/average.png)
 
 ## References
 
 *Insert the list of sites you used as references as an unordered list
 with named links here. This is required.*
+
+1.  [R for Data Science](https://r4ds.had.co.nz/)
+2.  [Lesson 6. Add Images to an R Markdown
+    Report](https://www.earthdatascience.org/courses/earth-analytics/document-your-science/add-images-to-rmarkdown-report/)
